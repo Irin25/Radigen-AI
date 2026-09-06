@@ -1,0 +1,18 @@
+# Ignore Python cache & virtual environment
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Ignore raw datasets & images
+processed_data/
+*.csv
+*.png
+*.jpg
+*.jpeg
+
+# Ignore model weights/checkpoints (too large for GitHub)
+checkpoints/
+checkpoints_nih_baseline/
+*.pt
+*.pth
