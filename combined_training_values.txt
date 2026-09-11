@@ -1,0 +1,162 @@
+Loaded 188903/188907 images for split: train
+Loaded 11039/11039 images for split: val
+Loaded 28401/28401 images for split: val
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Epoch 1/15 - LR: 3.00e-05 - train loss: 0.1026 - 
+ NIH mean AUROC:       0.8378
+   Atelectasis        AUROC: 0.8150
+   Cardiomegaly       AUROC: 0.9248
+   Consolidation      AUROC: 0.8053
+   Edema              AUROC: 0.8975
+   Pleural Effusion   AUROC: 0.8881
+   Pneumonia          AUROC: 0.7004
+   Pneumothorax       AUROC: 0.8512
+   No Finding         AUROC: 0.8201
+ CheXpert mean AUROC:  0.8108
+   Atelectasis        AUROC: 0.7138
+   Cardiomegaly       AUROC: 0.8645
+   Consolidation      AUROC: 0.7279
+   Edema              AUROC: 0.8448
+   Pleural Effusion   AUROC: 0.8798
+   Pneumonia          AUROC: 0.7516
+   Pneumothorax       AUROC: 0.8271
+   No Finding         AUROC: 0.8767
+ Combined mean AUROC:  0.8243
+ -> New best model saved (mean AUROC 0.8243)
+
+Epoch 2/15 - LR: 2.97e-05 - train loss: 0.0957 - 
+ NIH mean AUROC:       0.8430
+   Atelectasis        AUROC: 0.8218
+   Cardiomegaly       AUROC: 0.9232
+   Consolidation      AUROC: 0.8064
+   Edema              AUROC: 0.9057
+   Pleural Effusion   AUROC: 0.8948
+   Pneumonia          AUROC: 0.7127
+   Pneumothorax       AUROC: 0.8553
+   No Finding         AUROC: 0.8238
+ CheXpert mean AUROC:  0.8180
+   Atelectasis        AUROC: 0.7163
+   Cardiomegaly       AUROC: 0.8674
+   Consolidation      AUROC: 0.7384
+   Edema              AUROC: 0.8497
+   Pleural Effusion   AUROC: 0.8845
+   Pneumonia          AUROC: 0.7649
+   Pneumothorax       AUROC: 0.8427
+   No Finding         AUROC: 0.8797
+ Combined mean AUROC:  0.8305
+ -> New best model saved (mean AUROC 0.8305)
+
+Epoch 3/15 - LR: 2.87e-05 - train loss: 0.0929 - 
+ NIH mean AUROC:       0.8526
+   Atelectasis        AUROC: 0.8286
+   Cardiomegaly       AUROC: 0.9332
+   Consolidation      AUROC: 0.8090
+   Edema              AUROC: 0.9167
+   Pleural Effusion   AUROC: 0.8980
+   Pneumonia          AUROC: 0.7216
+   Pneumothorax       AUROC: 0.8804
+   No Finding         AUROC: 0.8333
+ CheXpert mean AUROC:  0.8250
+   Atelectasis        AUROC: 0.7234
+   Cardiomegaly       AUROC: 0.8722
+   Consolidation      AUROC: 0.7446
+   Edema              AUROC: 0.8544
+   Pleural Effusion   AUROC: 0.8882
+   Pneumonia          AUROC: 0.7774
+   Pneumothorax       AUROC: 0.8571
+   No Finding         AUROC: 0.8830
+ Combined mean AUROC:  0.8388
+ -> New best model saved (mean AUROC 0.8388)
+
+Epoch 4/15 - LR: 2.71e-05 - train loss: 0.0905 - 
+ NIH mean AUROC:       0.8528
+   Atelectasis        AUROC: 0.8288
+   Cardiomegaly       AUROC: 0.9304
+   Consolidation      AUROC: 0.8066
+   Edema              AUROC: 0.9126
+   Pleural Effusion   AUROC: 0.8991
+   Pneumonia          AUROC: 0.7318
+   Pneumothorax       AUROC: 0.8799
+   No Finding         AUROC: 0.8335
+ CheXpert mean AUROC:  0.8266
+   Atelectasis        AUROC: 0.7263
+   Cardiomegaly       AUROC: 0.8748
+   Consolidation      AUROC: 0.7458
+   Edema              AUROC: 0.8545
+   Pleural Effusion   AUROC: 0.8883
+   Pneumonia          AUROC: 0.7775
+   Pneumothorax       AUROC: 0.8614
+   No Finding         AUROC: 0.8840
+ Combined mean AUROC:  0.8397
+ -> New best model saved (mean AUROC 0.8397)
+
+Epoch 5/15 - LR: 2.50e-05 - train loss: 0.0883 - 
+ NIH mean AUROC:       0.8517
+   Atelectasis        AUROC: 0.8267
+   Cardiomegaly       AUROC: 0.9256
+   Consolidation      AUROC: 0.8041
+   Edema              AUROC: 0.9144
+   Pleural Effusion   AUROC: 0.9011
+   Pneumonia          AUROC: 0.7283
+   Pneumothorax       AUROC: 0.8796
+   No Finding         AUROC: 0.8342
+ CheXpert mean AUROC:  0.8281
+   Atelectasis        AUROC: 0.7251
+   Cardiomegaly       AUROC: 0.8748
+   Consolidation      AUROC: 0.7459
+   Edema              AUROC: 0.8560
+   Pleural Effusion   AUROC: 0.8894
+   Pneumonia          AUROC: 0.7816
+   Pneumothorax       AUROC: 0.8668
+   No Finding         AUROC: 0.8852
+ Combined mean AUROC:  0.8399
+ -> New best model saved (mean AUROC 0.8399)
+
+Epoch 6/15 - LR: 2.25e-05 - train loss: 0.0859 - 
+ NIH mean AUROC:       0.8492
+   Atelectasis        AUROC: 0.8294
+   Cardiomegaly       AUROC: 0.9308
+   Consolidation      AUROC: 0.8033
+   Edema              AUROC: 0.9173
+   Pleural Effusion   AUROC: 0.9019
+   Pneumonia          AUROC: 0.6993
+   Pneumothorax       AUROC: 0.8816
+   No Finding         AUROC: 0.8300
+ CheXpert mean AUROC:  0.8266
+   Atelectasis        AUROC: 0.7253
+   Cardiomegaly       AUROC: 0.8733
+   Consolidation      AUROC: 0.7504
+   Edema              AUROC: 0.8542
+   Pleural Effusion   AUROC: 0.8884
+   Pneumonia          AUROC: 0.7719
+   Pneumothorax       AUROC: 0.8655
+   No Finding         AUROC: 0.8839
+ Combined mean AUROC:  0.8379
+ -> No improvement for 1/2 epoch(s)
+
+Epoch 7/15 - LR: 1.96e-05 - train loss: 0.0833 - 
+ NIH mean AUROC:       0.8499
+   Atelectasis        AUROC: 0.8316
+   Cardiomegaly       AUROC: 0.9295
+   Consolidation      AUROC: 0.8008
+   Edema              AUROC: 0.9155
+   Pleural Effusion   AUROC: 0.9034
+   Pneumonia          AUROC: 0.7084
+   Pneumothorax       AUROC: 0.8751
+   No Finding         AUROC: 0.8353
+ CheXpert mean AUROC:  0.8263
+   Atelectasis        AUROC: 0.7215
+   Cardiomegaly       AUROC: 0.8734
+   Consolidation      AUROC: 0.7525
+   Edema              AUROC: 0.8560
+   Pleural Effusion   AUROC: 0.8882
+   Pneumonia          AUROC: 0.7721
+   Pneumothorax       AUROC: 0.8641
+   No Finding         AUROC: 0.8828
+ Combined mean AUROC:  0.8381
+ -> No improvement for 2/2 epoch(s)
+
+Early stopping triggered at epoch 7 (no improvement for 2 consecutive epochs).
+
+Training complete. Best validation mean AUROC: 0.8399

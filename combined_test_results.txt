@@ -1,0 +1,24 @@
+Loaded 12217/12217 images for split: test
+Loaded 29031/29031 images for split: test
+
+NIH TEST RESULTS
+Class                  AUROC    Accuracy
+Atelectasis           0.8222      0.9075
+Cardiomegaly          0.9153      0.9776
+Consolidation         0.8533      0.9641
+Edema                 0.9203      0.9868
+Pleural Effusion      0.8885      0.9088
+Pneumonia             0.7487      0.9912
+Pneumothorax          0.8719      0.9601
+No Finding            0.8326      0.8002
+
+CHEXPERT TEST RESULTS
+Class                  AUROC    Accuracy
+Atelectasis           0.7251      0.8150
+Cardiomegaly          0.8778      0.8975
+Consolidation         0.7445      0.9189
+Edema                 0.8578      0.8071
+Pleural Effusion      0.8888      0.8053
+Pneumonia             0.7592      0.9727
+Pneumothorax          0.8728      0.9163
+No Finding            0.8832      0.9094
