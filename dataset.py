@@ -1,10 +1,3 @@
-"""
-dataset.py
-PyTorch Dataset for the RadiGen AI multi-label chest X-ray classifier.
-Reads image filenames + 8 multi-hot label columns from a manifest CSV,
-loads the corresponding PNG from processed_data/<split>/, and returns
-(image_tensor, label_tensor).
-"""
 import os
 import pandas as pd
 import torch
@@ -46,32 +39,87 @@ def build_transforms(split):
     
 class ChestXrayDataset(Dataset):
 
-    def __init__(self, manifest_csv, image_dir, split):
+    def __init__(self, manifest_csv, nih_image_dir, chexpert_image_dir, split):
+        
         df_raw = pd.read_csv(manifest_csv)
-        self.image_dir = image_dir
+
+        self.nih_image_dir = nih_image_dir
+        self.chexpert_image_dir = chexpert_image_dir
         self.transform = build_transforms(split)
 
-        # Filter out rows whose image files don't physically exist on disk
         valid_indices = []
+
         for idx in range(len(df_raw)):
-            filename = os.path.basename(df_raw.iloc[idx]["image_filename"])
-            img_path = os.path.join(self.image_dir, filename)
+
+            row = df_raw.iloc[idx]
+            filename = os.path.basename(row["image_path"])
+
+            if row["dataset"] == "NIH":
+                img_path = os.path.join(self.nih_image_dir, filename)
+
+            elif row["dataset"] == "CheXpert":
+                img_path = os.path.join(self.chexpert_image_dir, filename)
+
+            else:
+                continue
+
             if os.path.exists(img_path):
                 valid_indices.append(idx)
 
-        # Keep only existing images and reset the index
         self.df = df_raw.iloc[valid_indices].reset_index(drop=True)
-        print(f"Loaded {len(self.df)}/{len(df_raw)} images for split: {split}")
+
+        print(
+            f"Loaded {len(self.df)}/{len(df_raw)} images "
+            f"for split: {split}"
+        )
 
     def __len__(self):
         return len(self.df)
-    
-    def __getitem__(self, idx):
-        row = self.df.iloc[idx]
-        filename = os.path.basename(row["image_filename"])
-        img_path = os.path.join(self.image_dir, filename)
-        image = Image.open(img_path).convert("L") # grayscale
-        image = self.transform(image)
-        labels = torch.tensor(row[CLASS_COLUMNS].values.astype("float32"))
-        return image, labels
 
+    def __getitem__(self, idx):
+
+        row = self.df.iloc[idx]
+
+        filename = os.path.basename(row["image_path"])
+
+        # Select correct image folder
+        if row["dataset"] == "NIH":
+            img_path = os.path.join(self.nih_image_dir, filename)
+
+        elif row["dataset"] == "CheXpert":
+            img_path = os.path.join(self.chexpert_image_dir, filename)
+
+        image = Image.open(img_path).convert("L")
+        image = self.transform(image)
+
+        # Disease labels
+        labels = torch.tensor(
+            row[CLASS_COLUMNS].values.astype("float32")
+        )
+
+        # Masks
+        MASK_COLUMNS = [
+            "Atelectasis_mask",
+            "Cardiomegaly_mask",
+            "Consolidation_mask",
+            "Edema_mask",
+            "Pleural Effusion_mask",
+            "Pneumonia_mask",
+            "Pneumothorax_mask",
+            "No Finding_mask",
+        ]
+
+        if row["dataset"] == "NIH":
+
+            # NIH has no uncertain labels,
+            # so every class is valid
+            masks = torch.ones(8, dtype=torch.float32)
+
+        else:
+
+            # CheXpert uses the actual U-Ignore masks
+            masks = torch.tensor(
+                row[MASK_COLUMNS].values.astype("float32")
+            )
+
+        return image, labels, masks

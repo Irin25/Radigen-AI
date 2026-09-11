@@ -1,0 +1,10 @@
+{
+  "Atelectasis": 0.33740234375,
+  "Cardiomegaly": 0.242919921875,
+  "Consolidation": 0.23876953125,
+  "Edema": 0.35400390625,
+  "Pleural Effusion": 0.37451171875,
+  "Pneumonia": 0.162353515625,
+  "Pneumothorax": 0.2147216796875,
+  "No Finding": 0.43505859375
+}
