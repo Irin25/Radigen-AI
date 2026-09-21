@@ -41,7 +41,7 @@ def main():
     preds = (all_probs >= 0.5).astype(int)
 
     print("\nNIH TEST RESULTS")
-    print(f"{'Class':<18s}{'AUROC':>10s}{'Accuracy':>12s}")
+    print(f"{'Class':<18s}{'AUROC':>10s}")
 
     for i, cls in enumerate(CLASS_COLUMNS):
         if len(np.unique(all_labels[:, i])) < 2:
@@ -49,9 +49,7 @@ def main():
         else:
             auroc_str = f"{roc_auc_score(all_labels[:, i], all_probs[:, i]):.4f}"
 
-        acc = accuracy_score(all_labels[:, i], preds[:, i])
-
-        print(f"{cls:<18s}{auroc_str:>10s}{acc:>12.4f}")
+        print(f"{cls:<18s}{auroc_str:>10s}")
 
     # ---------- CHEXPERT TEST ----------
     all_probs, all_labels, all_masks = [], [], []
@@ -73,7 +71,7 @@ def main():
     preds = (all_probs >= 0.5).astype(int)
 
     print("\nCHEXPERT TEST RESULTS")
-    print(f"{'Class':<18s}{'AUROC':>10s}{'Accuracy':>12s}")
+    print(f"{'Class':<18s}{'AUROC':>10s}")
 
     for i, cls in enumerate(CLASS_COLUMNS):
 
@@ -88,9 +86,7 @@ def main():
         else:
             auroc_str = f"{roc_auc_score(y_true, y_prob):.4f}"
 
-        acc = accuracy_score(y_true, y_pred)
-
-        print(f"{cls:<18s}{auroc_str:>10s}{acc:>12.4f}")
+        print(f"{cls:<18s}{auroc_str:>10s}")
 
 if __name__ == "__main__":
     main()

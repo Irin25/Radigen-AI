@@ -1,0 +1,14 @@
+Target: sensitivity >= 0.78 and specificity >= 0.83
+
+Class              Threshold    Sens    Spec   Status
+--------------------------------------------------------------
+Atelectasis            0.385    0.55    0.80   below target (fallback spec>=0.80)
+Cardiomegaly           0.263    0.80    0.84   OK (meets target)
+Consolidation          0.292    0.57    0.80   below target (fallback spec>=0.80)
+Edema                  0.389    0.80    0.83   OK (meets target)
+Pleural Effusion       0.401    0.83    0.83   OK (meets target)
+Pneumonia              0.173    0.63    0.80   below target (fallback spec>=0.80)
+Pneumothorax           0.213    0.80    0.80   below target (fallback spec>=0.80)
+No Finding             0.435    0.89    0.86   OK (meets target)
+
+Average pathologies flagged per image: 1.94
