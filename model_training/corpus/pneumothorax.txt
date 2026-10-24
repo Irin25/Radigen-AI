@@ -1,0 +1,20 @@
+[Pneumothorax | Definition]
+Pneumothorax is air trapped in the pleural space, the thin space between the lung and chest wall, which can cause part or all of the lung to collapse.
+
+[Pneumothorax | X-ray appearance]
+It typically appears as a thin white line marking the edge of the collapsed lung, with no visible lung markings in the dark space beyond that line. On a film taken lying down, air can instead collect along the front of the chest and produce a deep, unusually dark costophrenic angle known as the deep sulcus sign.
+
+[Pneumothorax | Common causes]
+Common underlying causes include spontaneous rupture of a small air blister on the lung surface, chest trauma, and medical procedures such as line placement or lung biopsy.
+
+[Pneumothorax | Often seen with]
+Frequently observed as an isolated finding, though it can occur alongside rib fractures or other chest trauma when the cause is an injury.
+
+[Pneumothorax | Look-alikes]
+Can be confused with skin folds, which can mimic the thin pleural line, and with large emphysematous air pockets (bullae) that also appear as dark areas without normal lung markings.
+
+[Pneumothorax | Limits of the X-ray]
+Small pneumothoraces, and ones on a film taken lying down, are easy to miss on a standard frontal view. A large pneumothorax that pushes the central chest structures to one side is a sign of a tension pneumothorax, a medical emergency.
+
+[Pneumothorax | Sources]
+Radiopaedia, Merck Manual Professional Version.

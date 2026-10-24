@@ -1,0 +1,20 @@
+[Edema | Definition]
+Pulmonary edema is excess fluid that has leaked into the tissue and air spaces of the lungs, most often because the heart is not pumping efficiently.
+
+[Edema | X-ray appearance]
+It typically appears as hazy opacities spreading outward from the central part of the lungs on both sides, along with prominent, engorged blood vessels in the upper lobes and short horizontal lines at the outer edges of the lower lung fields (Kerley B lines) that indicate fluid thickening the tiny partitions between lung lobules. It is often accompanied by an enlarged heart and small pleural effusions.
+
+[Edema | Common causes]
+Common underlying causes include heart failure (cardiac edema) and non-cardiac causes such as kidney failure, severe infection, or direct lung injury (non-cardiac edema).
+
+[Edema | Often seen with]
+Frequently observed alongside cardiomegaly and pleural effusion, particularly when the underlying cause is heart-related.
+
+[Edema | Look-alikes]
+Can resemble a widespread infection or inflammatory process in the lungs, since both can produce hazy, patchy opacities.
+
+[Edema | Limits of the X-ray]
+A chest film cannot reliably distinguish cardiac from non-cardiac causes of edema on its own, and mild or early edema can be subtle or missed, particularly on a portable film.
+
+[Edema | Sources]
+Radiopaedia, Merck Manual Professional Version.

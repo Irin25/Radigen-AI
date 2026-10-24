@@ -1,0 +1,11 @@
+[Reading the Heatmap | What it shows]
+The colored overlay is produced using a technique called Grad-CAM++. It highlights the regions of the image that most influenced the model's prediction for a specific finding, with warmer colors (red, orange, yellow) marking areas of stronger influence and cooler colors (blue) marking areas of weaker influence.
+
+[Reading the Heatmap | What it does not show]
+The heatmap shows where the model was "looking," not proof that a finding is actually present there. It is generated for whichever class is being explained, so a heatmap for a class the model rated below its threshold is not meaningful evidence of that finding, it just shows what little influence that region had.
+
+[Reading the Heatmap | Common pitfalls]
+The highlighted region can sometimes fall on image edges, text markers, medical devices, or positioning artifacts rather than genuine lung findings, especially on lower-quality or unusually positioned films. A heatmap should always be read together with the probability, the threshold, and the underlying image, never on its own.
+
+[Reading the Heatmap | Sources]
+Chattopadhay et al., "Grad-CAM++: Generalized Gradient-Based Visual Explanations for Deep Convolutional Networks."

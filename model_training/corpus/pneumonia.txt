@@ -1,0 +1,20 @@
+[Pneumonia | Definition]
+Pneumonia is an infection of the small air sacs in the lung, which fill with fluid, pus, or inflammatory cells instead of air.
+
+[Pneumonia | X-ray appearance]
+It typically appears as a focal or patchy area of increased whiteness (opacity) in the lung, often confined to one lobe. Air bronchograms, dark branching lines of air-filled airways running through the white opacity, are a classic supporting sign because they show that the surrounding air sacs, not the airways themselves, are filled with fluid.
+
+[Pneumonia | Common causes]
+Common underlying causes include bacterial, viral, and fungal infection, as well as aspiration of food or liquid into the lungs.
+
+[Pneumonia | Often seen with]
+Frequently observed alongside consolidation, since consolidation is the descriptive X-ray sign that pneumonia commonly produces.
+
+[Pneumonia | Look-alikes]
+Can be confused with atelectasis, pulmonary edema, or aspiration, all of which can also produce patchy or focal opacities.
+
+[Pneumonia | Limits of the X-ray]
+A chest film cannot identify which organism is causing the infection, and X-ray changes can lag behind or persist beyond the clinical illness, so a normal film early on does not rule pneumonia out, and an abnormal film after treatment does not always mean the infection is still active.
+
+[Pneumonia | Sources]
+Radiopaedia, StatPearls.

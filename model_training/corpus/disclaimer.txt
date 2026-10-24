@@ -1,0 +1,4 @@
+[Disclaimer]
+This tool provides an automated estimate based on a machine learning model and is not a medical diagnosis. It has not been reviewed or cleared by any regulatory body for clinical use. The predictions, probabilities, and heatmaps shown here are intended for research and educational purposes only.
+
+Any finding shown, whether flagged as positive or not, must be reviewed and confirmed by a qualified radiologist or physician before it is used to guide care. Do not use this tool to make medical decisions, delay seeking care, or replace a professional medical evaluation. If you have symptoms or concerns about your health, please consult a licensed healthcare provider.

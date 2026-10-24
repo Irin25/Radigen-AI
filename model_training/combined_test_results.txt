@@ -1,0 +1,25 @@
+Loaded 12217/12217 images for split: test
+Loaded 29031/29031 images for split: test
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+NIH TEST RESULTS
+Class                  AUROC
+Atelectasis           0.8274
+Cardiomegaly          0.9247
+Consolidation         0.8519
+Edema                 0.9159
+Pleural Effusion      0.8882
+Pneumonia             0.7558
+Pneumothorax          0.8764
+No Finding            0.8333
+
+CHEXPERT TEST RESULTS
+Class                  AUROC
+Atelectasis           0.7267
+Cardiomegaly          0.8816
+Consolidation         0.7485
+Edema                 0.8599
+Pleural Effusion      0.8907
+Pneumonia             0.7622
+Pneumothorax          0.8792
+No Finding            0.8835

@@ -1,0 +1,20 @@
+[No Finding | Definition]
+"No Finding" means the model did not detect any of the 7 conditions it was trained to recognize in this image.
+
+[No Finding | X-ray appearance]
+A film without one of these findings typically shows clear lung fields, sharp costophrenic angles at the base of each lung, a normal-sized heart, and a normal-looking central chest outline (mediastinum).
+
+[No Finding | Common causes]
+Not applicable; this label describes an absence of the 7 specific findings the model looks for, rather than a diagnosis.
+
+[No Finding | Often seen with]
+Not applicable, since this label represents the absence of the other 7 findings rather than a finding of its own.
+
+[No Finding | Look-alikes]
+Subtle or early versions of any of the 7 tracked findings, as well as conditions outside the model's 8 classes, can be present without being flagged.
+
+[No Finding | Limits of the X-ray]
+This result does not mean the patient is healthy. The model only screens for 7 specific conditions on a single 2D image, and cannot detect other diseases, very early or subtle disease, or anything outside its training classes.
+
+[No Finding | Sources]
+Radiopaedia, Merck Manual Professional Version.

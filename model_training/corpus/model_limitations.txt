@@ -1,0 +1,21 @@
+[Model Limitations | What this model is]
+This is a research-stage chest X-ray screening model, trained on a combination of the public NIH ChestX-ray14 and CheXpert datasets, using a Swin-Tiny image classifier. It outputs a probability for each of 8 findings; those probabilities are compared against per-class thresholds to decide whether a finding is flagged.
+
+[Model Limitations | Reliability by class]
+Based on the most recent threshold calibration run, targeting sensitivity of at least 0.78 and specificity of at least 0.83:
+
+Meets target (detected reliably): Cardiomegaly, Edema, Pleural Effusion, No Finding.
+
+Below target (flagged with lower reliability; probability shown, but not a confident detection): Atelectasis, Consolidation, Pneumonia, Pneumothorax. For these classes the calibration could not reach both targets at once, so the threshold was chosen to keep specificity around 0.80, which means some true cases of these findings will be missed. Pneumothorax comes closest to the target of the four, reaching sensitivity 0.80 but falling just short on specificity (0.80 vs. the 0.83 goal); the other three fall further short, with lower sensitivity accepted in exchange for that same specificity floor.
+
+[Model Limitations | Known weak spots]
+Pneumonia is the least reliable class overall, with the lowest sensitivity of the below-target group (0.63) and the lowest test-set AUROC on both datasets (0.75 on NIH, 0.76 on CheXpert). Pneumonia and Consolidation also overlap heavily with each other in both the training labels and the model's predictions, which lowers confidence in telling them apart. Atelectasis is likewise commonly under-detected (sensitivity 0.55). These numbers should be re-checked after every retrain.
+
+[Model Limitations | Data and training caveats]
+The model was trained on two different hospital datasets with different labeling methods; CheXpert includes uncertain labels that were masked out during training rather than resolved. Performance on images from other hospitals, scanners, or patient populations has not been tested and may differ from the validation results above.
+
+[Model Limitations | Intended use]
+This tool is for research and educational purposes only. It is not a diagnostic device, has not been cleared for clinical use, and should never be used as the sole basis for a medical decision.
+
+[Model Limitations | Sources]
+Internal validation results from compute_threshold.py and evaluate_test.py, run on the NIH and CheXpert validation and test sets.

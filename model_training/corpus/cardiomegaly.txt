@@ -1,0 +1,20 @@
+[Cardiomegaly | Definition]
+Cardiomegaly means the heart appears enlarged on imaging, beyond what is expected for a person's chest size.
+
+[Cardiomegaly | X-ray appearance]
+On a standard upright, front-facing (PA) film, it typically appears as a heart width greater than about half the total width of the chest, a measurement called the cardiothoracic ratio. The heart's overall silhouette looks rounded or enlarged compared with a normal, more tapered outline.
+
+[Cardiomegaly | Common causes]
+Common underlying causes include high blood pressure, weakened heart muscle (cardiomyopathy), valve disease, and fluid collecting around the heart (pericardial effusion).
+
+[Cardiomegaly | Often seen with]
+Frequently observed alongside pulmonary edema and pleural effusion, since an enlarged, poorly functioning heart can cause fluid to back up into the lungs and pleural space.
+
+[Cardiomegaly | Look-alikes]
+Can be confused with a normal heart that only looks large because of positioning, or with fluid around the heart rather than true enlargement of the heart muscle itself.
+
+[Cardiomegaly | Limits of the X-ray]
+Portable, AP-view, or supine films, and films taken during a shallow breath, all tend to make the heart look larger than it truly is, so the cardiothoracic ratio is only reliable on a proper upright PA film. An X-ray also shows size, not how well the heart is pumping.
+
+[Cardiomegaly | Sources]
+Radiopaedia, Merck Manual Professional Version.

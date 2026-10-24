@@ -1,0 +1,20 @@
+[Consolidation | Definition]
+Consolidation describes lung air spaces that have filled with fluid, pus, blood, or cells instead of air. It is a descriptive finding on imaging, not a diagnosis by itself.
+
+[Consolidation | X-ray appearance]
+It typically appears as a dense, fairly uniform white area that blurs the outlines of blood vessels running through it. Air bronchograms are often visible within the opacity, and the area does not usually cause the lung to lose volume the way collapse does.
+
+[Consolidation | Common causes]
+Common underlying causes include pneumonia, aspiration of stomach contents or fluid, bleeding into the lung, and pulmonary edema.
+
+[Consolidation | Often seen with]
+Frequently observed alongside pneumonia, since the two overlap heavily; consolidation is often the visual sign that leads to a pneumonia diagnosis.
+
+[Consolidation | Look-alikes]
+Can be confused with atelectasis or a lung mass, and distinguishing between infectious and non-infectious causes of consolidation usually requires clinical context.
+
+[Consolidation | Limits of the X-ray]
+An X-ray shows that air spaces are filled but cannot say what they are filled with or why, so consolidation on its own does not confirm infection, bleeding, or fluid overload without further correlation.
+
+[Consolidation | Sources]
+Radiopaedia, Fleischner Society glossary of thoracic imaging terms.
